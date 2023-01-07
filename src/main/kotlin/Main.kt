@@ -1,8 +1,9 @@
 fun main() {
     val treatFunction = trickOrTreat(false) { "$it quarters" }
     val trickFunction = trickOrTreat(true, null)
-
-    treatFunction()
+    repeat(7) {
+        treatFunction()
+    }
     trickFunction()
 
 }
